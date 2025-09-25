@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -19,31 +22,32 @@
                 <div class="pergunta">
                     <h3>1. perguntinha 1</h3>
                     <ul class="opcoes">
-                        <li><label><input type="radio" name="q1" value="a"> resposta 1</label></li>
-                        <li><label><input type="radio" name="q1" value="b"> resposta 2</label></li>
-                        <li><label><input type="radio" name="q1" value="c"> resposta 3</label></li>
+                        <li><label><input type="radio" name="q1" value="a">a) resposta 1</label></li>
+                        <li><label><input type="radio" name="q1" value="b">b) resposta 2</label></li>
+                        <li><label><input type="radio" name="q1" value="c">c) resposta 3</label></li>
                     </ul>
                 </div>
 
                 <div class="pergunta">
                     <h3>2. perguntinha 2</h3>
                     <ul class="opcoes">
-                        <li><label><input type="radio" name="q2" value="a"> resposta 1</label></li>
-                        <li><label><input type="radio" name="q2" value="b"> resposta 2</label></li>
-                        <li><label><input type="radio" name="q2" value="c"> resposta 3</label></li>
+                        <li><label><input type="radio" name="q2" value="a">a) resposta 1</label></li>
+                        <li><label><input type="radio" name="q2" value="b">b) resposta 2</label></li>
+                        <li><label><input type="radio" name="q2" value="c">c) resposta 3</label></li>
                     </ul>
                 </div>
 
                 <div class="pergunta">
                     <h3>3. perguntinha 3</h3>
                     <ul class="opcoes">
-                        <li><label><input type="radio" name="q3" value="a"> resposta 1</label></li>
-                        <li><label><input type="radio" name="q3" value="b"> resposta 2</label></li>
-                        <li><label><input type="radio" name="q3" value="c"> resposta 3</label></li>
+                        <li><label><input type="radio" name="q3" value="a">a) resposta 1</label></li>
+                        <li><label><input type="radio" name="q3" value="b">b) resposta 2</label></li>
+                        <li><label><input type="radio" name="q3" value="c">c) resposta 3</label></li>
                     </ul>
                 </div>
 
-                <button type="button" class="botao-avancar">Finalizar</button>
+                <button type="button" class="botao-avancar" onclick="window.location.href='index.html'">Voltar</button>
+                <button type="button" class="botao-avancar" onclick="finalizarQuiz()">Finalizar</button>
             </form>
             
         </main>
@@ -53,6 +57,5 @@
         </footer>
     </div>
 
-    <script src="../js/script.js"></script>
 </body>
 </html>

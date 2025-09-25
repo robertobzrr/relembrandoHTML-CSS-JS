@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo ao Cursinho!</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
 </head>
 
-<body>
+<body onload="carregarResultado()">
     <div class="container">
         <header>
-            <h1>Bem-vindo ao Cursinho!</h1>
+            <h1>Resultado:</h1>
         </header>
         <main>
-            <p>Para seguir para seu quiz, clique no botão abaixo:</p>
-            <button class="botao-avancar" onclick="window.location.href='quiz.html'">Avançar</button>
+
+            <p id="gabaritoUsuario"></p>
+            <p id="gabaritoOficial"></p>
+
+
+
+            <button class="botao-avancar" onclick="window.location.href='quizResultado.html'">Voltar</button>
+            <button class="botao-avancar" onclick="window.location.href='fim.html'">Finalizar</button>
+
         </main>
         <footer>
             <p>&copy; 2025 Curso Cursinho LTDA. Todos os direitos reservados.</p>
